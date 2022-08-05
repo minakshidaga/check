@@ -1,0 +1,571 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>College Website</title>
+<style>
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #1bc2a2;
+}
+
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #1bc2a2;
+}
+
+/* This hides the dropdowns */
+
+
+li ul { display: none; }
+
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+ul li a:hover { background: #2c3e50; }
+
+/* Display the dropdown */
+
+
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li { float: none; }
+
+li:hover a { background: #1bc2a2; }
+
+li:hover li a:hover { background: #2c3e50; }
+
+.main-navigation li ul li { border-top: 0; }
+
+/* Displays second level dropdowns to the right of the first level dropdown */
+
+
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+/* Simple clearfix */
+
+
+
+ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+ul:after { clear: both; }
+body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    background-color: goldenrod;
+    color: #555555;
+    padding: 3px;
+}
+
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+h1 {
+    font-family: Palatino Linotype, ‘Book Antiqua’, Palatino, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #FF6103;
+    font-size: 38px;
+}
+h2 {
+    font-family: Georgi serif;
+    border-bottom: 3px solid #cc9900;
+    color: #CDC3700;
+    font-size: 25px;
+}
+table {
+    width:100%;
+}
+
+table, th , td {
+    border: 1px solid brown;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff0f5;
+}
+table tr:nth-child(even) {
+    background-color: #fff0f5;
+} 
+
+form {
+              
+}
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+}
+.button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+}
+/*gallery image.......................................................................start*/
+        /* The Image Box */
+        div.img {
+            border: 0px solid #ccc;
+            
+        }
+
+            div.img:hover {
+                opacity:.8;
+               
+            }
+
+            /* The Image */
+            div.img img {
+                width: 100%;
+                height: auto;
+                cursor: pointer;
+            }
+
+        /* Description of Image */
+        div.desc {
+            padding:0px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add Responsiveness */
+        .responsive {
+            padding: 6px 6px 6px 6px;
+            float: left;
+            width: 24.999%;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+
+        /* Modal Content (image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Caption of Modal Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation */
+        .modal-content, #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0.1);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 100px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        /* next button*/
+        .next{
+            position:absolute;
+            top:200px;
+            right:100px;
+            color: #f1f1f1;
+            font-size: 100px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .next:hover,
+        .next:focus{
+            color:#bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        /* back button*/
+        .back{
+            position:absolute;
+            top:200px;
+            left:100px;
+            color: #f1f1f1;
+            font-size: 100px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .back:hover,
+        .back:focus{
+            color:#bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        /* Responsive Columns */
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+
+            .modal-content {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        /* Clear Floats */
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+</style>
+</head>
+
+<body background="black">
+
+  <div id="main">
+ 
+      <table border="1"  width="100%"  >
+<tr><td rowspan="4" align="center" ><img src="logo.jpg" width="250" height="150"></td>
+ <td align="center" bgcolor="brown"> <font color="lavender" font size="20" style="font-family:Times New Roman;font-weight:bold">IMPS College of Engineering & Technology</font></td>
+</tr>
+<tr><td align="center" bgcolor="brown"> <font color="lavender" font size="4"style="font-family:Arial;font-weight:italic"  >Approved by All India Council of Technical Education, Government of India</font></td>
+</tr>
+<tr><td align="center" bgcolor="brown"> <font color="lavender" font size="4"style="font-family:Times New Roman;font-weight:italic" >Affiliated to Maulana Abul Kalam Azad University of Technology (Formerly know as W.B.U.T), Government of India</font></td>
+</tr>
+<tr><td align="center" bgcolor="brown"> <marquee><font color="lavender" style="font-family:Times New Roman;font-weight:italic"font size="4">IMPSCET welcomes you || Even Semester 2016 Practical Exams routine are out || Even semester 2016 Form Fillup have begun</marquee></font></td>
+</tr>
+      </table>
+<ul class="main-navigation">
+  <li><a href="home.html">Home</a></li>
+  <li><a>Department</a>
+    <ul>
+        <li><a ><img src ="it.jpg" width ="20" height ="20">Computer Science & Engineering</a>
+	  <ul>
+	  <li><a href="cse.html">Introduction</a></li>
+	  <li><a href="csefaculty.html">Faculty</a></li>
+	  <li><a href="cselab.html">Laboratories</a></li>
+           <li><a href="cseachivement.html"> Achievement</a></li>
+	  </ul>
+      <li><a ><img src ="ece.png" width ="20" height ="20">Electronics & Communication Engineering</a>
+        <ul>
+          <li><a href="ece.html">Introduction</a></li>
+	  <li><a href="ecefaculty.html">Faculty</a></li>
+	  <li><a href="eclab.html">Laboratories</a></li>
+           <li><a href="eceachivement.html">Achievement</a></li>
+        </ul>
+		<li><a ><img src ="bulb.jpg" width ="20" height ="20">Electrical Engineering</a>
+	  <ul>
+	  <li><a href="ee.html">Introduction</a></li>
+	  <li><a href="eefaculty.html">Faculty</a></li>
+	  <li><a href="eelab.html">Laboratories</a></li>
+          <li><a href="eeachivement.html">Achievement</a></li>
+	  </ul>
+	  <li><a ><img src ="ci.png" width ="20" height ="20">Civil Engineering</a>
+	  <ul>
+	  <li><a href="ce.html">Introduction</a></li>
+	  <li><a href="cefaculty.html">Faculty</a></li>
+	  <li><a href="celab.html">Laboratories</a></li>
+        
+	  </ul>
+              <li><a><img src ="hu.png" width ="20" height ="20">Humanities</a>
+	  <ul>
+	  <li><a href="hns.html">Introduction</a></li>
+	  <li><a href="humanitiesfaculty.html">Faculty</a></li>
+	  <li><a href="hnslab.html">Laboratories</a></li>
+   
+	  </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a>Admission</a>
+   <ul>
+       <li><a href="admspcrd.html">Admission Details</a></li>
+   <li><a href="fee.html">Course Fee</a></li>
+   <li><a href="scho.html">Scholarship</a></li></ul></li>
+  <li><a >Library</a>
+      <ul>
+      <li><a href="rule.html">Rules & Regulations</a></li>
+       <li><a href="libraryteam.html">Library Team</a></li>
+        <li><a href="libraryresourse.html">Library Resources</a></li>
+  </ul>
+  </li>
+  
+  <li><a >Facilities</a>
+       <ul>
+      <li><a href="hostels.html">Hostel Facility</a></li>
+       <li><a href="rag.html">Anti-Ragging</a></li>
+        <li><a href="fac.html">Other Facilities</a></li>
+  </ul>
+  </li>
+  <li><a href="#">Placement</a>
+      <ul>
+      <li><a href="placement.html">Placement Team</a></li>
+       <li><a href="recruit.html">Eminent Recruiters</a></li>
+  </ul>
+  </li>
+   <li><a>Attendance</a>
+   <ul>
+       <li><a href="atdncsrch.html">View Attendance</a></li></ul></li>
+  <li><a >Events</a>
+      <ul>
+      <li><a href="gal.html">Gallery</a></li>
+       <li><a href="sports.html">Annual Sports</a></li>
+        <li><a href="edueve.html">Educational Events</a></li>
+  </ul>
+  </li>
+  <li><a >Contact us</a>
+      <ul>
+      <li><a href="contactus.html"> College Address</a></li>
+       <li><a href="loc.html">College Location</a></li>
+  </ul>
+  </li>
+  <li><a >About us</a>
+  <ul>
+       <li><a href="about.html">Our mission & Vision</a></li>
+      <li><a href="chairman.html">From the Chairman's Desk</a></li>
+       <li><a href="principal.html">From the Principal's Desk</a></li>
+        <li><a href="director.html">From the Director's Desk</a></li>
+        <li><a href="management.html">The Management Team</a></li>
+  </ul>
+  </li>
+   <li><a href="feedback.html">Feedback</a></li>
+  <li><a href="admin1.html">Admin</a></li>
+</ul>
+  
+ 
+
+
+      <marquee onmouseout="this.start()" onmouseover="this.stop()" direction="left"  behavior="alternate" >
+
+<div class="responsive">
+                    <div class="img">
+                        <img src="i1.JPG" alt="gallery"  width="100" height="100">
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i2.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+                    <div class="responsive">
+                    <div class="img">
+                        <img src="i3.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i4.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+      </marquee><marquee onmouseout="this.start()" onmouseover="this.stop()" direction="right"  behavior="alternate" >
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i5.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i6.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i7.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i8.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div></marquee>
+                <marquee onmouseout="this.start()" onmouseover="this.stop()" direction="left"  behavior="alternate" >
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i9.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i10.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+                <div class="responsive">
+                    
+                    <div class="img">
+                        <img src="i11.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i12.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+                </marquee>
+                <marquee onmouseout="this.start()" onmouseover="this.stop()" direction="right"  behavior="alternate" >
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i13.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+      <div class="responsive">
+                    <div class="img">
+                        <img src="i14.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i15.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i16.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </marquee>
+                <marquee onmouseout="this.start()" onmouseover="this.stop()" direction="left"  behavior="alternate" >
+                </div>
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i17.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i18.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i19.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img">
+                        <img src="i20.JPG" alt="gallery"  width="100" height="100" >
+                    </div>
+                </div>
+                </marquee>
+                <div class="clearfix"></div>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">×</span>
+                    <img class="modal-content" id="img01" />
+                    <div id="caption"></div>
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('myModal');
+
+                    // Get the <span> element that closes the modal
+                    var spanc = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on <span> (x), close the modal
+                    spanc.onclick = function () {
+                        modal.style.display = "none";
+                    }
+
+                    // Get all images and insert the clicked image inside the modal
+                    // Get the content of the image description and insert it inside the modal image caption
+                    var images = document.getElementsByTagName('img');
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    var i;
+                    for (i = 0; i < images.length; i++) {
+                        images[i].onclick = function () {
+                            modal.style.display = "block";
+                            modalImg.src = this.src;
+                            modalImg.alt = this.alt;
+                            captionText.innerHTML = this.nextElementSibling.innerHTML;
+                        }
+                    }
+                   
+
+                </script>

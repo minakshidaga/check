@@ -1,0 +1,319 @@
+<html>
+<head>
+<title>College Website</title>
+  <style>body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    background-color: goldenrod;
+    color: #696969;
+    padding: 3px;
+}
+
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #996600;
+    font-size: 30px;
+}
+table {
+    width:100%;
+}
+
+table, th , td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+    background-color: #ffffff;
+} 
+
+form {
+              
+}
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+}
+.button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+}
+.button:hover  {
+                background-color:#fafafa;
+                color:#207cca;
+}
+li {
+  color: solid grey; /* bullet color */
+}
+li span {
+  color: black; /* text color */
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: cyan;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: wheat;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color:cyan}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}</style>
+</head>
+
+<body background="black">
+
+  <div id="main">
+  <table>
+<tr>
+    <td><marquee bgcolor="2.jpg">
+            <font color="yellow" font size="14" style="font-family:Brush Script Std;">Welcome to Our College Website <img src="r.jpg" width="30" height="30"></font></marquee></td>
+</tr>
+</table>
+
+      <table>
+          <tr>
+              <td>
+                  <ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  
+  <li class="dropdown">
+    <a class="dropbtn">Department</a>
+    <div class="dropdown-content">
+      <a href="cse.html">CSE</a>
+      <a href="ece.html">ECE</a>
+      <a href="ce.html">CE</a>
+    </div>
+  </li>
+  <li><a class="active" href="Attendance.html">Attendance</a></li>
+   <li><a class="active" href="Library.html">Library</a></li>
+  
+  <li><a class="active" href="faculty.html">Faculty</a></li>
+  <li><a class="active" href="admission.html">Admission</a></li>
+   <li><a class="active" href="login.html">Login</a></li>
+    <li><a class="active" href="reg.html">Signup</a></li> 
+    
+    
+    
+</ul>
+
+              </td>
+          </tr>
+      </table>
+          <title>faculty</title>
+           
+     </head>
+
+<body>
+<h1><div id="header">Faculty of CIVIL Department</div></h1>
+<table>
+
+    <tr>
+        <th>Sr.</th>
+        <th>NAME</th>
+        <th>QUALIFICATION</th>
+        <th>DESIGNATION</th>
+        
+    </tr>
+    <tr>
+        <td>01.</td>	<td>Dr. D. Dutta</td>	<td>M.Tech, Ph.D</td>	<td>Professor</td>
+		</tr>
+		<tr>
+		<td>02.</td>	<td>Dr. S. K. Sarkar</td>	<td>M.Tech, Ph.D</td>	<td>Professor</td></tr>
+<tr><td>03.</td>	<td>B. Bhattacharjee</td>  <td>M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>04.</td>	<td>Biswajit Barman</td>	<td>M.Tech, (Pur PhD)</td>	<td>Asst. Professor</td></tr>
+<tr><td>05.</td>	<td>Piyali Basu</td>	<td>M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>06.</td>	<td>Seboke Dutta</td>	<td>M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>07.</td>	<td>	Arijit Acharjya</td>  <td>	M.Tech</td>	<td>	Asst. Professor</td></tr>
+<tr><td>08.</td>	<td>	Kalyan Kumar Roy</td>  <td>	M.Tech</td>	<td>	Asst. Professor</td></tr>
+<tr><td>09.</td>	<td>	Nandan Kumar Karar</td>  <td>	M.Tech</td>	<td>	Asst. Professor</td></tr>
+<tr><td>10.</td>	<td>	Sougata Kumar mahanta</td>  <td>	M.Tech</td>	<td>	Asst. Professor</td></tr>
+<tr><td>11.</td>	<td>	Munmun Bhowmik</td>  <td>	M.Tech</td>	<td>	Asst. Professor</td></tr>
+<tr><td>12.</td>	<td>	Tamal Saha</td>  <td>	M.Tech</td>	<td>	Asst. Professor</td></tr>
+        
+    </tr>
+</table>
+<br><br><br>
+<h1><div id="header">Faculty of CSE Department</div></h1>
+<table>
+
+    <tr>
+        <th>Sr.</th>
+        <th>NAME</th>
+        <th>QUALIFICATION</th>
+        <th>DESIGNATION</th>
+        
+    </tr>
+    <tr>
+        <td>01.</td>	<td>Debasis Mandal</td>	<td>B.Tech, M.Tech</td>	<td>Asst. Professor</td>
+		</tr>
+		<tr>
+		<td>02.</td>	<td>Tanmoy Bose</td>	<td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>03.</td>	<td>Amit Kumar Sen</td>  <td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>04.</td>	<td>Mainak Adhikari</td>	<td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>05.</td>	<td>Dipak Kumar Dutta</td>	<td>MCA, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>06.</td>	<td>Sivaji Nath</td>	<td>MCA</td>	<td>Lab Assistant</td></tr>
+
+</table>
+<br><br><br>
+<h1><div id="header">Faculty of ECE Department</div></h1>
+<table>
+
+    <tr>
+        <th>Sr.</th>
+        <th>NAME</th>
+        <th>QUALIFICATION</th>
+        <th>DESIGNATION</th>
+        
+    </tr>
+    <tr>
+        <td>01.</td>	<td>Anirban Dutta</td>	<td>B.Tech, M.Tech</td>	<td>Asst. Professor</td>
+		</tr>
+		<tr>
+		<td>02.</td>	<td>Gopal Dutta</td>	<td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>03.</td>	<td>Himadri Sekhar Panda</td>  <td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>04.</td>	<td>Sharmistha Biswas</td>	<td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>05.</td>	<td>Parimal Chowdhury</td>	<td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>06.</td>	<td>Ashoke Goswami</td>	<td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>07.</td>	<td>Sudipta Das</td>	<td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>08.</td>	<td>Dipankar Mishra</td>	<td>Diploma</td>	<td>Lab Assistant</td></tr>
+
+</table>
+<br><br><br>
+<h1><div id="header">Faculty of EE Department</div></h1>
+<table>
+
+    <tr>
+        <th>Sr.</th>
+        <th>NAME</th>
+        <th>QUALIFICATION</th>
+        <th>DESIGNATION</th>
+        
+    </tr>
+    <tr>
+        <td>01.</td>	<td>Dr. R. Chakraborty</td>	<td>M.Tech, Ph.D</td>	<td>Professor</td>
+		</tr>
+		<tr>
+		<td>02.</td>	<td>Sunit Ghosh Majumda</td>	<td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>03.</td>	<td>Sankha Subhra Ghosh</td>  <td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>04.</td>	<td>Kunal Chakraborty</td>	<td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>05.</td>	<td>Sujay Sarkar</td>	<td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>06.</td>	<td>Pritam Chowdhury</td>	<td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+
+</table>
+<br><br><br>
+<h1><div id="header"><br><br><br>
+<h1><div id="header">Faculty of Humanities Department</div></h1>
+<table>
+
+    <tr>
+        <th>Sr.</th>
+        <th>NAME</th>
+        <th>QUALIFICATION</th>
+        <th>DESIGNATION</th>
+        
+    </tr>
+    <tr>
+        <td>01.</td>	<td>Dr.B.P.Sarkar</td>	<td>M.Tech, Ph.D</td>	<td>Director</td>
+		</tr>
+		<tr>
+		<td>02.</td>	<td>Dr. Salil Kumar Bhattacharya</td>	<td>M.Tech,Ph.D</td>	<td>Principal</td></tr>
+<tr><td>03.</td>	<td>Dr. Dilip Kumar Das</td>  <td>M.Sc, Ph.D</td>	<td>Professor</td></tr>
+<tr><td>04.</td>	<td>Dr. Niranjan Das</td>	<td>M.Sc, Ph.D</td>	<td>Professor</td></tr>
+<tr><td>05.</td>	<td>Dr. Aloke Chakraborty</td>	<td>M.Sc, Ph.D</td>	<td>Professor(visiting)</td></tr>
+<tr><td>06.</td>	<td>Dr. Ila Bhaduri</td>	<td>M.Sc, Ph.D</td>	<td>Professor(visiting)</td></tr>
+<tr><td>07.</td>	<td>Sarajit Kumar layek</td>	<td>B.Sc, M.Sc(Chem)</td>	<td>Asst. Professor</td></tr>
+<tr><td>08.</td>	<td>Manabendra Chakraborty</td>	<td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>09.</td>	<td>Saismita Mukherjee</td>	<td>BA, MA(Eng)</td>	<td>Asst. Professor</td></tr>
+<tr><td>10.</td>	<td>Goutam Sinha</td>	<td>B.Sc, M.Sc(Phy)</td>	<td>Asst. Professor</td></tr>
+<tr><td>11.</td>	<td>Chirasree Dasgupta</td>	<td>BA, MA, M.Phil(Eng)</td>	<td>Asst. Professor</td></tr>
+<tr><td>12.</td>	<td>Mousumi Debnath</td>	<td>B.Sc, M.Sc(Chem.)</td>	<td>Asst. Professor</td></tr>
+<tr><td>13.</td>	<td>Moumita Mishra</td>	<td>B.Com, M.Com</td>	<td>Asst. Professor</td></tr>
+<tr><td>14.</td>	<td>Swapan Lala</td>	<td>B.Sc, M.Sc(Phy)</td>	<td>Asst. Professor</td></tr>
+<tr><td>15.</td>	<td>Santanu Dey</td>	<td>B.Tech, M.Tech</td>	<td>Asst. Professor</td></tr>
+<tr><td>16.</td>	<td>Shainy Kar Chakraborty</td>	<td>B.Sc, M.Sc(Math)</td>	<td>Asst. Professor</td></tr>
+<tr><td>17.</td>	<td>Sourav Kumar Chakraborty</td>	<td>Diploma</td>	<td>Lab Assistant</td></tr>
+
+
+</table></div></h1>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<center><table>
+<tr>
+<td>
+<a href="Home.html"><center>Home</center></a>
+</td>
+<td>
+<a href="about.html"><center>About us</center>
+</a></td>
+<td>
+<a href="contact.html"><Center>Contact us</center></a>
+</td>
+</table>
+</center>
+</body>
+</head>
+</html>

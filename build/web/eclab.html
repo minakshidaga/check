@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>College Website</title>
+<style>
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #1bc2a2;
+}
+
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #1bc2a2;
+}
+
+/* This hides the dropdowns */
+
+
+li ul { display: none; }
+
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+ul li a:hover { background: #2c3e50; }
+
+/* Display the dropdown */
+
+
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li { float: none; }
+
+li:hover a { background: #1bc2a2; }
+
+li:hover li a:hover { background: #2c3e50; }
+
+.main-navigation li ul li { border-top: 0; }
+
+/* Displays second level dropdowns to the right of the first level dropdown */
+
+
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+/* Simple clearfix */
+
+
+
+ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+ul:after { clear: both; }
+body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    background-color: goldenrod;
+    color: #555555;
+    padding: 3px;
+}
+
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+h1 {
+    font-family: Palatino Linotype, ‘Book Antiqua’, Palatino, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #FF6103;
+    font-size: 38px;
+}
+h2 {
+    font-family: Georgi serif;
+    border-bottom: 3px solid #cc9900;
+    color: #CDC3700;
+    font-size: 25px;
+}
+table {
+    width:100%;
+}
+
+table, th , td {
+    border: 1px solid brown;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff0f5;
+}
+table tr:nth-child(even) {
+    background-color: #ffb6c1;
+} 
+
+form {
+              
+}
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+}
+.button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+}
+</style>
+</head>
+
+<body background="black">
+
+  <div id="main">
+ 
+      <table border="1"  width="100%"  >
+<tr><td rowspan="4" align="center" ><img src="logo.jpg" width="250" height="150"></td>
+ <td align="center" bgcolor="brown"> <font color="lavender" font size="20" style="font-family:Times New Roman;font-weight:bold">IMPS College of Engineering & Technology</font></td>
+</tr>
+<tr><td align="center" bgcolor="brown"> <font color="lavender" font size="4"style="font-family:Arial;font-weight:italic"  >Approved by All India Council of Technical Education, Government of India</font></td>
+</tr>
+<tr><td align="center" bgcolor="brown"> <font color="lavender" font size="4"style="font-family:Times New Roman;font-weight:italic" >Affiliated to Maulana Abul Kalam Azad University of Technology (Formerly know as W.B.U.T), Government of India</font></td>
+</tr>
+<tr><td align="center" bgcolor="brown"> <marquee><font color="lavender" style="font-family:Times New Roman;font-weight:italic"font size="4">IMPSCET welcomes you || Even Semester 2016 Practical Exams routine are out || Even semester 2016 Form Fillup have begun</marquee></font></td>
+</tr>
+      </table>
+<ul class="main-navigation">
+  <li><a href="home.html">Home</a></li>
+  <li><a>Department</a>
+    <ul>
+        <li><a ><img src ="it.jpg" width ="20" height ="20">Computer Science & Engineering</a>
+	  <ul>
+	  <li><a href="cse.html">Introduction</a></li>
+	  <li><a href="csefaculty.html">Faculty</a></li>
+	  <li><a href="cselab.html">Laboratories</a></li>
+           <li><a href="cseachivement.html"> Achievement</a></li>
+	  </ul>
+      <li><a ><img src ="ece.png" width ="20" height ="20">Electronics & Communication Engineering</a>
+        <ul>
+          <li><a href="ece.html">Introduction</a></li>
+	  <li><a href="ecefaculty.html">Faculty</a></li>
+	  <li><a href="eclab.html">Laboratories</a></li>
+           <li><a href="eceachivement.html">Achievement</a></li>
+        </ul>
+		<li><a ><img src ="bulb.jpg" width ="20" height ="20">Electrical Engineering</a>
+	  <ul>
+	  <li><a href="ee.html">Introduction</a></li>
+	  <li><a href="eefaculty.html">Faculty</a></li>
+	  <li><a href="eelab.html">Laboratories</a></li>
+          <li><a href="eeachivement.html">Achievement</a></li>
+	  </ul>
+	  <li><a ><img src ="ci.png" width ="20" height ="20">Civil Engineering</a>
+	  <ul>
+	  <li><a href="ce.html">Introduction</a></li>
+	  <li><a href="cefaculty.html">Faculty</a></li>
+	  <li><a href="celab.html">Laboratories</a></li>
+        
+	  </ul>
+              <li><a><img src ="hu.png" width ="20" height ="20">Humanities</a>
+	  <ul>
+	  <li><a href="hns.html">Introduction</a></li>
+	  <li><a href="humanitiesfaculty.html">Faculty</a></li>
+	  <li><a href="hnslab.html">Laboratories</a></li>
+   
+	  </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a>Admission</a>
+   <ul>
+       <li><a href="admspcrd.html">Admission Details</a></li>
+   <li><a href="fee.html">Course Fee</a></li>
+   <li><a href="scho.html">Scholarship</a></li></ul></li>
+  <li><a >Library</a>
+      <ul>
+      <li><a href="rule.html">Rules & Regulations</a></li>
+       <li><a href="libraryteam.html">Library Team</a></li>
+        <li><a href="libraryresourse.html">Library Resources</a></li>
+  </ul>
+  </li>
+  
+  <li><a href="#">Facilities</a>
+       <ul>
+      <li><a href="hostels.html">Hostel Facility</a></li>
+       <li><a href="rag.html">Anti-Ragging</a></li>
+        <li><a href="fac.html">Other Facilities</a></li>
+  </ul>
+  </li>
+  <li><a >Placement</a>
+      <ul>
+      <li><a href="placement.html">Placement Team</a></li>
+       <li><a href="recruit.html">Eminent Recruiters</a></li>
+  </ul>
+  </li>
+   <li><a>Attendance</a>
+   <ul>
+       <li><a href="atdncsrch.html">View Attendance</a></li></ul></li>
+  <li><a >Events</a>
+      <ul>
+      <li><a href="gallery.html">Gallery</a></li>
+       <li><a href="sports.html">Annual Sports</a></li>
+        <li><a href="edueve.html">Educational Events</a></li>
+  </ul>
+  </li>
+  <li><a href="#">Contact us</a>
+      <ul>
+      <li><a href="contactus.html"> College Address</a></li>
+       <li><a href="loc.html">College Location</a></li>
+  </ul>
+  </li>
+  <li><a href="#">About us</a>
+  <ul>
+       <li><a href="about.html">Our mission & Vision</a></li>
+      <li><a href="chairman.html">From the Chairman's Desk</a></li>
+       <li><a href="principal.html">From the Principal's Desk</a></li>
+        <li><a href="director.html">From the Director's Desk</a></li>
+        <li><a href="management.html">The Management Team</a></li>
+  </ul>
+  </li>
+   <li><a href="feedback.html">Feedback</a></li>
+  <li><a href="admin1.html">Admin</a></li>
+</ul>
+<!2nd table starts>
+
+	 
+	 <h1><div id="header">Electronics & Communication Laboratory</div></h1>
+	 
+<p style="text-align: justify;"><span style="font-weight: 400;"> The Electronics & Telecommunication Dept. emphasizes on practical in both software and hardware sections with laboratory facilities. Some of the laboratories are - Basic Electronics, Analog and Digital Electronics, Solid state Device, Analog, Digital, Optical & Advanced Communication, Microwave and RF Engineering, Antenna & Transmission line, VLSI Design, Signal system & DSP, Electronics Circuit Design and Microprocessor etc.</p>
+ 
+	 <h1><div id="header">Electronics & Communication Lab</div></h1>
+	 
+<p style="text-align: justify;"><span style="font-weight: 400;"> The Electronics & Telecommunication Dept. emphasizes on practical in both software and hardware sections with laboratory facilities. Some of the laboratories are - Basic Electronics, Analog and Digital Electronics, Solid state Device, Analog, Digital, Optical & Advanced Communication, Microwave and RF Engineering, Antenna & Transmission line, VLSI Design, Signal system & DSP, Electronics Circuit Design and Microprocessor etc.</p>
+
+<p>In this lab, students are exposed to the knowledge of various filtering designs, signal generation and synthesis.
+In the VLSI lab, students are trained to design various digital circuits using Verilog module and to study synthesis tools, simulation modules, place, route .
+Students have imported knowledge of design of differential amplifier, Integrator, differentiator Instrumentation amplifier, various fitters along with design of PLL, Power supplies,
+Students are exposed to the design of high level amplifiers and Oscillators. They also gain knowledge using the simulation software.</p>
+<p>EC department have various modern engineering laboratories:</p>
+<h2>Basic Electronic Engineering Lab :</h2>
+<p>In this Lab, the first year students are trained to handle the basic equipments/instruments including Signal Generators, Cathode Ray Oscilloscope and Digital Multimeter. Fundamental experiments in Analog and Digital Electronics are offered. This lab is intended to give the students a practical experience in working with semiconductor devices such as junction diodes, bipolar junction transistors (BJTs), MOS field effect transistors (MOSFETs) and op-amps, and examines the design and operation of important circuits that utilize these devices.</p>
+<h2>Analog Electronics Circuit Lab :</h2>
+<p>his lab makes student able to design, test and examine simple circuits with transistor, op-amp, amplifiers, oscillators etc. Most importantly they will be able to recognize, understand, modify and repair majority of circuits used in professional equipment design. It contains prominent experiments related to OP-AMP Parameters, Realization of Second order Active Filter, Voltage to Frequency Conversion, 555 Timer etc.</p>
+<h2>Solid State Devices Lab :</h2>
+<p>Most importantly this lab provides our students the knowledge about different diodes and analysis of simple circuits using diodes, testing of transistors (BJT, JFET, MOSFET) and idea about their characteristic curves. This lab builds the confidence of the students to design the advanced electronic circuits. The students study the impact of various design parameters on the performance of the circuits using Multisim simulator.</p>
+<h2>Digital Electronics and Integrated Circuits Lab :</h2>
+<p>The objective of this lab is to provide our students a platform for practicing their theoretical knowledge by designing, constructing and testing the combinational as well as sequential digital circuits. The theoretical idea of the students are validated by testing the combinational and sequential logic circuits using trainer kit and as well as by constructing the circuits with bread board by using different ICs.</p>
+<h2>Analog and Digital Communication Lab :</h2>
+<p>In this lab, experiments for Analog Communication Design lab and Digital Communication lab are carried out. The experiments are the fundamental blocks of any communication system use now-a-days. The experiments include study of AM, FM, ASK, FSK, PSK, PAM, PWM, PCM, DM etc. Students are also exposed to the different multiplexing techniques like TDM and FDM.</p>
+<h2>Microprocessor & Microcontroller Lab :</h2>
+<p>This lab contains large number of microprocessor programming trainer kit. They also perform different application programming such as interfacing many peripheral elements like display, motor etc. Different Microcontroller based projects are performed in this laboratory. Chip burning facility is provided in this laboratory.</p>
+
+<p>In this lab, students are exposed to the knowledge of various filtering designs, signal generation and synthesis.</p>
+<h2> VLSI Lab </h2>
+
+
+<p>&nbsp;</p>
+
+
+</body>
+     </html>

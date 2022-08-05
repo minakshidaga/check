@@ -1,0 +1,6 @@
+create table reg1(uid1 varchar2(30),pass1 varchar2(30),nm varchar2(30),mnm varchar2(30),lnm varchar2(30),dob varchar2(30),gndr varchar2(30),addr varchar2(30),city varchar2(30),pin varchar2(30),email varchar2(30),sq1 varchar2(30),ans1 varchar2(30),fdbck varchar2(30));
+
+create table atdnc(nm varchar2(30),mnm varchar2(30),lnm varchar2(30),rno varchar2(30) primary key,lupdt varchar2(30),gndr varchar2(30),year varchar2(30),dept varchar2(30),atdnc varchar2(30),tatdnc varchar2(30),email varchar2(30),fdbck varchar2(30));
+create table query(name varchar2(30),email varchar2(30),cntct varchar2(30),query varchar2(500));
+ 
+  create table fdbck(name varchar2(30),email varchar2(30),cntct varchar2(30),query varchar2(30));              

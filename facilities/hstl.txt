@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>IMPSCET</title>
+  <style>body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    background-color: goldenrod;
+    color: #555555;
+    padding: 3px;
+}
+
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+h1 {
+    font-family: HELVETICA,SANS-SERIF;
+    border-bottom: 3px solid #cc9900;
+    color: #FF6103;
+    font-size: 38px;
+}
+h2 {
+    font-family: Georgi serif;
+    border-bottom: 3px solid #cc9900;
+    color: #CDC3700;
+    font-size: 25px;
+}
+table {
+    width:100%;
+}
+
+table, th , td {
+    border: 1px solid orange;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff0f5;
+}
+table tr:nth-child(even) {
+    background-color: #ff1493;
+} 
+
+form {
+              
+}
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+}
+.button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+}
+.button:hover  {
+                background-color:#fafafa;
+                color:#207cca;
+}
+li {
+  color: red; /* bullet color */
+}
+li span {
+  color: black; /* text color */
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFA07A;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #006400;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #388E8E;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: wheat;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color:#4EEE94}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+      #div1{
+          width: 960px;
+          height: auto;
+          border: 6px solid silver;
+          background: blue;
+          margin: 10px auto;
+      }
+    </style>
+</head>
+
+<body background="black">
+
+  <div id="main">
+  <table>
+<tr>
+    <td><marquee bgcolor="2.jpg">
+            <font color="#388E8E" font size="14" style="font-family:Brush Script Std;">Welcome to Our College Website <img src="r.jpg" width="30" height="30"></font></marquee></td>
+</tr>
+</table>
+
+      <table>
+          <tr>
+              <td>
+                  <ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  
+  <li class="dropdown">
+    <a class="dropbtn">Department</a>
+    <div class="dropdown-content">
+      <a href="cse.html">CSE</a>
+      <a href="ece.html">ECE</a>
+      <a href="ce.html">CE</a>
+    </div>
+  </li>
+  <li><a class="active" href="Attendance.html">Attendance</a></li>
+   <li><a class="active" href="Library.html">Library</a></li>
+  
+  <li><a class="active" href="faculty.html">Faculty</a></li>
+  <li class="dropdown">
+    <a class="dropbtn">Admission</a>
+    <div class="dropdown-content">
+      <a href="Admission Procedure.html">Admission Procedure</a>
+           
+        
+      <a href="Courses Fees.html">Courses Fees</a>
+      <a href="Scholarship.html">Scholarship</a>
+   
+  </li> 
+  
+                      
+   
+   <li><a class="active" href="login.html">Login</a></li>
+    <li><a class="active" href="reg.html">Signup</a></li> 
+    
+    
+    
+</ul>
+
+              </td>
+          </tr>
+      </table>
+      
+
+
+<!2nd table starts>
+<table>
+
+<tr>
+    <td >
+
+        <! img src="1.gif" width="950" height="500">
+        <h1>HOSTEL</h1>
+                    
+                    <p>
+                        There are three hostels in our college:-<br><br>
+                        1. J.C.BOSE hostel for senior boys.<br>
+                        2. IMPS boys hostel II for 1st Year boys.<br>
+                        3. NIBEDITA HALL for girls.<br>
+                    </p>   
+                    <p> All the necessary facilities for student are available in all three hostels. The hostel is neat & clean. Purified water is available in hostel. The food provided in hostel is hygienic enough to avoid any kind of health issues. The environment of hostel is green and clean outside the hostel. The girls and boys live in hostel are quite friendly.They maintain the silence in study hours. The timing of hostel entry at the end of the day is at 7 p.m for all three hostels. The hostel guards ensures the safely and security of hostel and caring warden is available 24*7.
+                        
+                        
+                    </p>
+                        
+                        
+                        
+                    </tr>
+</table>
+                                  
+    
+    <table>
+      
+</table>
+
+
+
+<center><table>
+<tr>
+<td>
+<a href="Home.html"><center>Home</center></a>
+</td>
+<td>
+<a href="about.html"><center>About us</center>
+</a></td>
+<td>
+<a href="contact.html"><Center>Contact us</center></a>
+</td>
+</table>
+</center>
+ 
+  </div>
+
+</body>
+</html>

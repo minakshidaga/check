@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <title>Attendance add</title>
+  <link href="site.css" rel="stylesheet">
+  <script>
+function ValidateEmail()  
+{  
+var x = document.forms["myForm"]["fname13"].value;
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+if(x.match(mailformat))  
+{  
+ 
+return true;  
+}  
+else  
+{  
+alert("You have entered an invalid email address!"); 
+return false;  
+}  
+}  
+
+
+//Checking whether the fields are empty or not on pressing the submit button
+
+
+
+
+
+
+
+//Checking whether a field contains number or not when the field loses its focus
+
+//function blurred()
+
+ // {var y = document.forms["myForm"]["fname2"].value;
+ // if(isNaN(y)==true)
+  //{
+ //   alert("Plz enter a valid password");
+  //  document.forms["myForm"]["fname2"].focus();}}
+  
+
+
+
+
+//Displaying something when a field gains focus
+
+
+
+
+
+//Displaying a message while reseting
+
+function resetting()
+{
+  alert("Refreshing every field");
+}
+
+
+</script>
+
+
+</head>
+
+   
+      
+<body background="black">
+
+  <div id="main">
+ 
+      <table border="1"  width="100%"  >
+<tr><td rowspan="4" align="center" ><img src="logo.jpg" width="250" height="150"></td>
+ <td align="center" bgcolor="brown"> <font color="lavender" font size="20" style="font-family:Times New Roman;font-weight:bold">IMPS College of Engineering & Technology</font></td>
+</tr>
+<tr><td align="center" bgcolor="brown"> <font color="lavender" font size="4"style="font-family:Arial;font-weight:italic"  >Approved by All India Council of Technical Education, Government of India</font></td>
+</tr>
+<tr><td align="center" bgcolor="brown"> <font color="lavender" font size="4"style="font-family:Times New Roman;font-weight:italic" >Affiliated to Maulana Abul Kalam Azad University of Technology (Formerly know as W.B.U.T), Government of India</font></td>
+</tr>
+<tr><td align="center" bgcolor="brown"> <marquee><font color="lavender" style="font-family:Times New Roman;font-weight:italic"font size="4">IMPSCET welcomes you || Even Semester 2016 Practical Exams routine are out || Even semester 2016 Form Fillup have begun</marquee></font></td>
+</tr>
+      </table>
+<ul class="main-navigation">
+  <li><a href="admin.html">Home</a></li>
+ 
+  
+   <li><a>Attendance</a>
+   <ul>
+       <li><a href="addattendance.html">Add Attendance</a></li>
+        <li><a href="modattendance.html">Edit Attendance</a></li>
+         <li><a href="delattendance.html">Delete Attendance</a></li>
+   </ul></li>
+ 
+  <li><a href="queryrcv.html">View Query</a></li>
+  <li><a href="fbrcv.html">View Feedback</a></li>
+</ul>
+ 
+      
+
+        <form name="myForm" action="addattendance" onsubmit="return validateForm()" 
+method="post" onreset="resetting()">
+        <h1>
+            Add Attendance
+            </h1>
+            <center><table>
+              
+            <tr>
+                <td>Name</td>
+               <td><input type="text" name="fname1"></td>
+            </tr>
+            <tr>
+                <td>Middle Name </td>
+               <td><input type="text" name="fname2"></td>
+            </tr>
+            <tr>
+                <td>Last Name </td>
+               <td><input type="text" name="fname3"></td>
+            </tr>
+             <tr>
+            <td>Roll no.</td>
+               <td><input type="text" min="0" name="fname4"></td>
+               </tr>
+            <tr>
+            <td>LastUpdate</td>
+            <td>
+                    <select name="fname5">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+   <option value="31">31</option>
+   </select>
+<select name="fname6">
+    <option value="Jan">January</option>
+    <option value="Feb">February</option>
+    <option value="Mar">March</option>
+    <option value="Apr">April</option>
+    <option value="May">May</option>
+    <option value="Jun">June</option>
+    <option value="Jul">July</option>
+    <option value="Aug">August</option>
+    <option value="Sep">September</option>
+    <option value="Oct">October</option>
+    <option value="Nov">November</option>
+    <option value="Dec">December</option>
+
+</select>
+<select name="fname7"><option value="2016">2016</option>
+</select></td>
+            </tr>
+            
+             <tr>
+                <td>Gender</td>
+               <td>
+                <input type="radio" name="fname8" value="male" checked> Male<br>
+  <input type="radio" name="fname8" value="female"> Female<br>
+  <input type="radio" name="fname8" value="other"> Other
+  </td>
+            </tr>
+             <tr>
+                <td>Year</td>
+               <td><input type="text" name="fname9"></td>
+               
+            </tr>
+            <tr>
+                <td>Department</td>
+               <td><input type="text" name="fname10"></td>
+               
+            </tr>
+            <tr>
+            <td>Attendance</td>
+               <td><input type="number" min="0" name="fname11"></td>
+               </tr>
+                <tr>
+            <td>Total Atendance</td>
+               <td><input type="number" min="0" name="fname12"></td>
+               </tr>
+               
+               <tr> 
+         <td>Email</td>
+               <td><input type="text" name="fname13"  onblur="ValidateEmail()"></td>
+               </tr>
+               
+           
+               <tr>
+                  <td colspan="2" align="center"><input type="submit" value=" Add "></td>
+               </tr>
+               
+               
+            
+    
+        
+</table>        </form>
+</center>
+  </div> </body>
+</html>

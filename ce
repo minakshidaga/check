@@ -1,0 +1,226 @@
+<html>
+    <head>
+  <title>College Website</title>
+  <style>body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    background-color: goldenrod;
+    color: #696969;
+    padding: 3px;
+}
+
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #996600;
+    font-size: 30px;
+}
+table {
+    width:100%;
+}
+
+table, th , td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+    background-color: #ffffff;
+} 
+
+form {
+              
+}
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+}
+.button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+}
+.button:hover  {
+                background-color:#fafafa;
+                color:#207cca;
+}
+li {
+  color: solid grey; /* bullet color */
+}
+li span {
+  color: black; /* text color */
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: cyan;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: wheat;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color:cyan}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}</style>
+</head>
+
+<body background="black">
+
+  <div id="main">
+  <table>
+<tr>
+    <td><marquee bgcolor="2.jpg">
+            <font color="yellow" font size="14" style="font-family:Brush Script Std;">Welcome to Our College Website <img src="r.jpg" width="30" height="30"></font></marquee></td>
+</tr>
+</table>
+
+      <table>
+          <tr>
+              <td>
+                  <ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  
+  <li class="dropdown">
+    <a class="dropbtn">Department</a>
+    <div class="dropdown-content">
+      <a href="cse.html">CSE</a>
+      <a href="ece.html">ECE</a>
+      <a href="ce.html">CE</a>
+    </div>
+  </li>
+  <li><a class="active" href="Attendance.html">Attendance</a></li>
+   <li><a class="active" href="Library.html">Library</a></li>
+  
+  <li><a class="active" href="faculty.html">Faculty</a></li>
+  <li><a class="active" href="admission.html">Admission</a></li>
+   <li><a class="active" href="login.html">Login</a></li>
+    <li><a class="active" href="reg.html">Signup</a></li> 
+    
+    
+    
+</ul>
+
+              </td>
+          </tr>
+      </table>
+          <title>ce</title>
+           
+     </head>
+     <body>
+	 
+	 <h1><div id="header">Vision & Mission</div></h1>
+	 
+<p style="text-align: center;"><strong>VISION</strong></p>
+<p style="text-align: justify;"><span style="font-weight: 400;">To impart holistic and research oriented education in civil engineering, in conformity with global standards while adhering to environmental sustenance.</span></p>
+<p style="text-align: center;"><strong>MISSION</strong></p>
+<ul>
+<li>Train and equip graduates to take up civil engineering profession.</li>
+<li>Extend knowledge and expertise for the development of the community.</li>
+<li>Motivate students for higher studies and research.</li>
+<li>Foster continuous learning process.</li>
+<li>Create responsible professionals, capable of initiating sustainable engineering practices.</li>
+</ul> 
+<h1><div id="header">Civil Engineering</div></h1>
+<p style="text-align: justify;">Civil Engineering department is the new addition in our academic streams since 2010. Keeping in mind the scope, importance and applicability of this traditional engineering discipline. The department has well equipped labs in all disciplines which caters to the need of the undergraduate students.The laboratories of Solid Mechanics, Surveying Practice, Fluid Mechanics, Soil Mechanics, Building Design, Drawing Lab and others are subjected to regular audits and regular maintenance to keep the facilities updated with global standards.</p>
+<p style="text-align: justify;">The faculty of the department is well qualified and dedicated to the improvement of academic standards and is keen on the overall development of the students.  </p>
+
+             
+<p>&nbsp;</p>                       
+                       <h3>Program Offered : </h3>
+<p>B.Tech-Computer Science and Engineering - 4Years.</p>
+<p>&nbsp;</p>
+<h1><div id="header">Intake</div></h1>
+<table style="width:100%">
+    <tr>
+        <th>Discipline</th>
+        <th>WBJEE</th>
+        <th>JEE MAIN</th>
+        <th>JELET</th>
+        <th>TFW</th>
+        <th>Total Intake</th>
+    </tr>
+    <tr>
+        <td>CE</td>
+        <td>108</td>
+        <td>12</td>
+        <td>24</td>
+        <td>06</td>
+        <td>120</td>
+    </tr>
+</table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<center><table>
+<tr>
+<td>
+<a href="home.html"><center>Home</center></a>
+</td>
+<td>
+<a href="about.html"><center>About us</center>
+</a></td>
+<td>
+<a href="contact.html"><Center>Contact us</center></a>
+</td>
+</table>
+</center>
+</body>
+     </html>

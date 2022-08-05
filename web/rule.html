@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>College Website</title>
+<style>
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #1bc2a2;
+}
+
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #1bc2a2;
+}
+
+/* This hides the dropdowns */
+
+
+li ul { display: none; }
+
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+ul li a:hover { background: #2c3e50; }
+
+/* Display the dropdown */
+
+
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li { float: none; }
+
+li:hover a { background: #1bc2a2; }
+
+li:hover li a:hover { background: #2c3e50; }
+
+.main-navigation li ul li { border-top: 0; }
+
+/* Displays second level dropdowns to the right of the first level dropdown */
+
+
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+/* Simple clearfix */
+
+
+
+ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+ul:after { clear: both; }
+body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    background-color: goldenrod;
+    color: #555555;
+    padding: 3px;
+}
+
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+h1 {
+    font-family: Palatino Linotype, ‘Book Antiqua’, Palatino, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #FF6103;
+    font-size: 38px;
+}
+h2 {
+    font-family: Georgi serif;
+    border-bottom: 3px solid #cc9900;
+    color: #CDC3700;
+    font-size: 25px;
+}
+table {
+    width:100%;
+}
+
+table, th , td {
+    border: 1px solid brown;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff0f5;
+}
+table tr:nth-child(even) {
+    background-color: #ffb6c1;
+} 
+
+form {
+              
+}
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+}
+.button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+}
+</style>
+</head>
+
+<body background="black">
+
+  <div id="main">
+ 
+      <table border="1"  width="100%"  >
+<tr><td rowspan="4" align="center" ><img src="logo.jpg" width="250" height="150"></td>
+ <td align="center" bgcolor="brown"> <font color="lavender" font size="20" style="font-family:Times New Roman;font-weight:bold">IMPS College of Engineering & Technology</font></td>
+</tr>
+<tr><td align="center" bgcolor="brown"> <font color="lavender" font size="4"style="font-family:Arial;font-weight:italic"  >Approved by All India Council of Technical Education, Government of India</font></td>
+</tr>
+<tr><td align="center" bgcolor="brown"> <font color="lavender" font size="4"style="font-family:Times New Roman;font-weight:italic" >Affiliated to Maulana Abul Kalam Azad University of Technology (Formerly know as W.B.U.T), Government of India</font></td>
+</tr>
+<tr><td align="center" bgcolor="brown"> <marquee><font color="lavender" style="font-family:Times New Roman;font-weight:italic"font size="4">IMPSCET welcomes you || Even Semester 2016 Practical Exams routine are out || Even semester 2016 Form Fillup have begun</marquee></font></td>
+</tr>
+      </table>
+<ul class="main-navigation">
+  <li><a href="home.html">Home</a></li>
+  <li><a>Department</a>
+    <ul>
+        <li><a ><img src ="it.jpg" width ="20" height ="20">Computer Science & Engineering</a>
+	  <ul>
+	  <li><a href="cse.html">Introduction</a></li>
+	  <li><a href="csefaculty.html">Faculty</a></li>
+	  <li><a href="cselab.html">Laboratories</a></li>
+           <li><a href="cseachivement.html"> Achievement</a></li>
+	  </ul>
+      <li><a ><img src ="ece.png" width ="20" height ="20">Electronics & Communication Engineering</a>
+        <ul>
+          <li><a href="ece.html">Introduction</a></li>
+	  <li><a href="ecefaculty.html">Faculty</a></li>
+	  <li><a href="eclab.html">Laboratories</a></li>
+           <li><a href="eceachivement.html">Achievement</a></li>
+        </ul>
+		<li><a ><img src ="bulb.jpg" width ="20" height ="20">Electrical Engineering</a>
+	  <ul>
+	  <li><a href="ee.html">Introduction</a></li>
+	  <li><a href="eefaculty.html">Faculty</a></li>
+	  <li><a href="eelab.html">Laboratories</a></li>
+          <li><a href="eeachivement.html">Achievement</a></li>
+	  </ul>
+	  <li><a ><img src ="ci.png" width ="20" height ="20">Civil Engineering</a>
+	  <ul>
+	  <li><a href="ce.html">Introduction</a></li>
+	  <li><a href="cefaculty.html">Faculty</a></li>
+	  <li><a href="celab.html">Laboratories</a></li>
+        
+	  </ul>
+              <li><a><img src ="hu.png" width ="20" height ="20">Humanities</a>
+	  <ul>
+	  <li><a href="hns.html">Introduction</a></li>
+	  <li><a href="humanitiesfaculty.html">Faculty</a></li>
+	  <li><a href="hnslab.html">Laboratories</a></li>
+   
+	  </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a>Admission</a>
+   <ul>
+       <li><a href="admspcrd.html">Admission Details</a></li>
+   <li><a href="fee.html">Course Fee</a></li>
+   <li><a href="scho.html">Scholarship</a></li></ul></li>
+  <li><a >Library</a>
+      <ul>
+      <li><a href="rule.html">Rules & Regulations</a></li>
+       <li><a href="libraryteam.html">Library Team</a></li>
+        <li><a href="libraryresourse.html">Library Resources</a></li>
+  </ul>
+  </li>
+  
+  <li><a href="#">Facilities</a>
+       <ul>
+      <li><a href="hostels.html">Hostel Facility</a></li>
+       <li><a href="rag.html">Anti-Ragging</a></li>
+        <li><a href="fac.html">Other Facilities</a></li>
+  </ul>
+  </li>
+  <li><a >Placement</a>
+      <ul>
+      <li><a href="placement.html">Placement Team</a></li>
+       <li><a href="recruit.html">Eminent Recruiters</a></li>
+  </ul>
+  </li>
+   <li><a>Attendance</a>
+   <ul>
+       <li><a href="atdncsrch.html">View Attendance</a></li></ul></li>
+  <li><a >Events</a>
+      <ul>
+      <li><a href="gallery.html">Gallery</a></li>
+       <li><a href="sports.html">Annual Sports</a></li>
+        <li><a href="edueve.html">Educational Events</a></li>
+  </ul>
+  </li>
+  <li><a href="#">Contact us</a>
+      <ul>
+      <li><a href="contactus.html"> College Address</a></li>
+       <li><a href="loc.html">College Location</a></li>
+  </ul>
+  </li>
+  <li><a href="#">About us</a>
+  <ul>
+       <li><a href="about.html">Our mission & Vision</a></li>
+      <li><a href="chairman.html">From the Chairman's Desk</a></li>
+       <li><a href="principal.html">From the Principal's Desk</a></li>
+        <li><a href="director.html">From the Director's Desk</a></li>
+        <li><a href="management.html">The Management Team</a></li>
+  </ul>
+  </li>
+   <li><a href="feedback.html">Feedback</a></li>
+  <li><a href="admin1.html">Admin</a></li>
+</ul>
+      <table>
+
+<tr>
+    <td >
+
+        <h1><div id="header">Library rules & regulations</div></h1>
+       <table style="width:100%">
+           <p>&nbsp;</p>
+    </td>
+</tr>
+<p style="text-align: justify;"><span style="font-weight: 400;">Library rules are recognized in accordance 2012 and time to time. some excrepts of the policy as well as the library rules as follows:</span></p>
+<p style="text-align: justify;"><span style="font-weight: 400;">Imps library welcomes to all of its members to use the library.in order to ensure a good library environment and to enable the user to have as productive as possible in the library we ask users to abide the following rules. however, all members should exercise self discipline,respect and consideration for others when using the library</span></p>
+<p style="text-align: justify;"><span style="font-weight: 400;">The library is open to registered members only and hold valid membership card and using the library. students can registered their name and get a library identity card. the card must be bring when they use the library</span></p>
+<p style="text-align: justify;"><span style="font-weight: 400;">Teachers and students of the institute have to collect their membership card by filling up the membership form and the card must used only by the member to whom it is issued.</span></p>
+<p style="text-align: justify;"><span style="font-weight: 400;">Loss of membership card must be reported to the librarian immediately. For preparing duplicate card subsequently found, it must be returned to the librarian without delay.</span></p>
+<p style="text-align: justify;"><span style="font-weight: 400;">Faculty and staff member are requested to sign on the register before using the library. Students are advised to submit their library card before entering the library reading room.</span></p>
+<p style="text-align: justify;"><span style="font-weight: 400;">Damage of library material and damage to library materials is serious offense.Members must report only multitation or damage that found in books before borrowing.</span></p>
+<h2> Library Timings: </h2>  
+<p style="text-align: justify;"><span style="font-weight: 400;">The library remains open on the college working days except and library will remain closed on all other holidays.</span></p>
+<p style="text-align: justify;"><span style="font-weight: 400;">the opening hours of the library are from 9.00 a.m to 10.00 p.m</span></p>
+<p style="text-align: justify;"><span style="font-weight: 400;">All library services provided in 9.00 a.m to 10.00 p.m</span></p>     <p style="text-align: justify;"><span style="font-weight: 400;">Student can use the book by registering book banking by 500 cost and registered the book</span></p>
+
+  </div>
+</body>
+</html>  

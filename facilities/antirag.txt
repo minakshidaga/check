@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>IMPSCET</title>
+  <style>body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    background-color: goldenrod;
+    color: #555555;
+    padding: 3px;
+}
+
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+h1 {
+    font-family: HELVETICA,SANS-SERIF;
+    border-bottom: 3px solid #cc9900;
+    color: #FF6103;
+    font-size: 38px;
+}
+h2 {
+    font-family: Georgi serif;
+    border-bottom: 3px solid #cc9900;
+    color: #CDC3700;
+    font-size: 25px;
+}
+table {
+    width:100%;
+}
+
+table, th , td {
+    border: 1px solid orange;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff0f5;
+}
+table tr:nth-child(even) {
+    background-color: #ff1493;
+} 
+
+form {
+              
+}
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+}
+.button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+}
+.button:hover  {
+                background-color:#fafafa;
+                color:#207cca;
+}
+li {
+  color: red; /* bullet color */
+}
+li span {
+  color: black; /* text color */
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFA07A;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #006400;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #388E8E;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: wheat;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color:#4EEE94}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+      #div1{
+          width: 960px;
+          height: auto;
+          border: 6px solid silver;
+          background: blue;
+          margin: 10px auto;
+      }
+    </style>
+</head>
+
+<body background="black">
+
+  <div id="main">
+  <table>
+<tr>
+    <td><marquee bgcolor="2.jpg">
+            <font color="#388E8E" font size="14" style="font-family:Brush Script Std;">Welcome to Our College Website <img src="r.jpg" width="30" height="30"></font></marquee></td>
+</tr>
+</table>
+
+      <table>
+          <tr>
+              <td>
+                  <ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  
+  <li class="dropdown">
+    <a class="dropbtn">Department</a>
+    <div class="dropdown-content">
+      <a href="cse.html">CSE</a>
+      <a href="ece.html">ECE</a>
+      <a href="ce.html">CE</a>
+    </div>
+  </li>
+  <li><a class="active" href="Attendance.html">Attendance</a></li>
+   <li><a class="active" href="Library.html">Library</a></li>
+  
+  <li><a class="active" href="faculty.html">Faculty</a></li>
+  <li class="dropdown">
+    <a class="dropbtn">Admission</a>
+    <div class="dropdown-content">
+      <a href="Admission Procedure.html">Admission Procedure</a>
+           
+        
+      <a href="Courses Fees.html">Courses Fees</a>
+      <a href="Scholarship.html">Scholarship</a>
+   
+  </li> 
+  
+                      
+   
+   <li><a class="active" href="login.html">Login</a></li>
+    <li><a class="active" href="reg.html">Signup</a></li> 
+    
+    
+    
+</ul>
+
+              </td>
+          </tr>
+      </table>
+      
+
+
+<!2nd table starts>
+<table>
+
+<tr>
+    <td >
+        1.gif" width="950" height="500"</td>
+</table>
+    
+        
+        <h1>AntiRagging</h1>
+                    <p>&nbsp;</p>
+                    <h2>Measure We Take</h2>
+                    <p>The following measures we take to avoid ragging in our college campus:-<br>
+                       a)An Anti-Ragging Committee has been made in our college as per norms of AICTE to ensure zero-ragging. <br>
+                       b)For fresher's seprate class-rooms and hostel is provided so, that we can save them from the seniors contact.
+                       <br> 
+                     c)To create no ragging atmosphere in our college, an Anti-Ragging Board is there which clearly mention the punishment for the raggers. </p>
+                    <p>&nbsp;</p>
+                    <h2>Constitution Of Anti-Ragging Committee</h2>
+                    <p>According to the "West Bengal Prohibition of Ragging in Educational Institute Act 2000" the student who are involved in ragging should punish strictly and it has been made compulsory for colleges and other Educational Institutions to register F.I.R.s against them.
+                    <p>&nbsp;</p>
+                    
+                    <table id="customers">
+                        <tr>
+                            <th>Sl No.</th>
+                            <th>Name</th>
+                            <th>Designation</th>
+                            <th>Status In Anti-Ragging Committee</th>
+                            <th>Contact No.</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td> Dr.S.K.Bhattacharya</td>
+                            <td>Principal,IMPSCET</td>
+                            <td>Chairperson</td>
+                            <td>9830734478</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>2</td>
+                            <td>Officer in charge</td>
+                            <td>OIC,English Bazar PS</td>
+                            <td>Member(Police Administration)</td>
+                            <td>03512-252071</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Nandini Saraswati</td>
+                            <td>SDO,sadar</td>
+                            <td>Member(District Administration)</td>
+                            <td>03512-252733</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>4</td>
+                            <td>Mr.A.Dasgupta</td>
+                            <td>Journalist Amar Malda</td>
+                            <td>Member(Local media)</td>
+                            <td>9232603740</td>
+                        
+                            
+                        </tr>
+                        <tr class="alt">
+                            <td>5</td>
+                            <td>Mr.Anirban Dutta</td>
+                            <td>Assistant Proffeser & HOD,ECE,IMPSCET</td>
+                            <td>Member</td>
+                            <td>923206747</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>6</td>
+                            <td>Mr.Shankha Subhra Ghosh</td>
+                            <td>Assistant Proffeser & HOD,EE,IMPSCET</td>
+                            <td>Member</td>
+                            <td>9477158862</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>7</td>
+                            <td>Tanmoy Bosh</td>
+                            <td>Assistant Proffeser,CSE,IMPSCET</td>
+                            <td>Member</td>
+                            <td>9733404962</td>
+                        </tr>
+                        
+                         <tr class="alt">
+                            <td>8</td>
+                            <td>Mrs.Chirasree Dasgupta</td>
+                            <td>Assistant Proffeser & HOD,Humanities,IMPSCET</td>
+                            <td>Member</td>
+                            <td>9474682082</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>9</td>
+                            <td>Mr.A.K.Chakarborty</td>
+                            <td>Administrative Officer,IMPSCET</td>
+                            <td>Member</td>
+                            <td>9434206574</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>10</td>
+                            <td>Mr.D.Bagchi</td>
+                            <td>Non Teaching Stuff IMPSCET</td>
+                            <td>Member</td>
+                            <td>9434304193</td>
+                            
+                        </tr>
+                        <tr class="alt">
+                        <td>11</td>
+                        <td>Mrs.Moumita Chatterjee</td>
+                        <td>Girls Hostel Superintended</td>
+                        <td>member</td>
+                        <td>9933676461</td>
+                    </tr>
+                    <tr class="alt">
+                    <td>12</td>
+                    <td>Mr.Kunal Chakarborty</td>
+                    <td>Boys HOstel Superintended</td>
+                    <td>Member</td>
+                    <td>9563528557</td>
+                    </tr>
+                    <tr class="alt">
+                        <td>13</td>
+                        <td>Mr.Sanjib Kumar Kundu</td>
+                        <td>Parent</td>
+                        <td>member</td>
+                       
+                    </tr>
+                    <tr class="alt">
+                        <td>14</td>
+                        <td>Mr.Meya Uddin Miya</td>
+                        <td>Parent</td>
+                        <td>Member</td>
+                      
+                    </tr>
+                    <tr class="alt">
+                        <td>15</td>
+                        <td>Mr.Niraj Pandey</td>
+                        <td>4th Year CSE Student</td>
+                        <td>Member</td>
+                    </tr>
+                    <tr class="alt">
+                        <td>16</td>
+                        <td>Mr.Somnath Hazari</td>
+                        <td>3rd Year EE</td>
+                        <td>Member</td>
+                    </tr>
+                    <tr class="alt">
+                        <td>17</td>
+                        <td>Mr.Ashish Sarka</td>
+                        <td>1st Year EE</td>
+                        <td>Member</td>
+                    </tr>
+                    <tr class="alt">
+                        <td>18</td>
+                        <td>Mr.Soumyadip Banarjee</td>
+                        <td>1st Year CSE</td>
+                        <td>Member</td>
+                    </tr>
+                    
+                    </table>
+                    <h2>Punishment For Ragging</h2>
+                   
+                    <p>
+                    The following actions are taken against student for indulging & alerting ragging:-<br><br>
+               
+               
+                       1. Suspension from attending classes. <br>
+                       2. Suspension from hostel.<br>
+                       3. F.I.R. must be filed against raggers.<br>
+                       4. Fine could be taken from them.<br>
+                       5.Explusion from institution.<br>
+                      </p>
+                    <p>&nbsp;</p>
+</td>
+
+
+
+</tr>
+</table>
+                                  
+    
+    <table>
+      
+</table>
+
+
+
+<center><table>
+<tr>
+<td>
+<a href="Home.html"><center>Home</center></a>
+</td>
+<td>
+<a href="about.html"><center>About us</center>
+</a></td>
+<td>
+<a href="contact.html"><Center>Contact us</center></a>
+</td>
+</table>
+</center>
+ 
+  </div>
+
+</body>
+</html>

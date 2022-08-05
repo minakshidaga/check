@@ -1,0 +1,224 @@
+<html>
+    <head>
+  <title>College Website</title>
+  <style>body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    background-color: goldenrod;
+    color: #696969;
+    padding: 3px;
+}
+
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #996600;
+    font-size: 30px;
+}
+table {
+    width:100%;
+}
+
+table, th , td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+    background-color: #ffffff;
+} 
+
+form {
+              
+}
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+}
+.button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+}
+.button:hover  {
+                background-color:#fafafa;
+                color:#207cca;
+}
+li {
+  color: solid grey; /* bullet color */
+}
+li span {
+  color: black; /* text color */
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: cyan;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: wheat;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color:cyan}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}</style>
+</head>
+
+<body background="black">
+
+  <div id="main">
+  <table>
+<tr>
+    <td><marquee bgcolor="2.jpg">
+            <font color="yellow" font size="14" style="font-family:Brush Script Std;">Welcome to Our College Website <img src="r.jpg" width="30" height="30"></font></marquee></td>
+</tr>
+</table>
+
+      <table>
+          <tr>
+              <td>
+                  <ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  
+  <li class="dropdown">
+    <a class="dropbtn">Department</a>
+    <div class="dropdown-content">
+      <a href="cse.html">CSE</a>
+      <a href="ece.html">ECE</a>
+      <a href="ce.html">CE</a>
+    </div>
+  </li>
+  <li><a class="active" href="Attendance.html">Attendance</a></li>
+   <li><a class="active" href="Library.html">Library</a></li>
+  
+  <li><a class="active" href="faculty.html">Faculty</a></li>
+  <li><a class="active" href="admission.html">Admission</a></li>
+   <li><a class="active" href="login.html">Login</a></li>
+    <li><a class="active" href="reg.html">Signup</a></li> 
+    
+    
+    
+</ul>
+
+              </td>
+          </tr>
+      </table>
+     <title>ee</title>
+           
+     </head>
+     <body>
+	 
+	 <h1><div id="header">Vision & Mission</div></h1>
+	 
+<p style="text-align: center;"><strong>VISION</strong></p>
+<p style="text-align: justify;"><span style="font-weight: 400;">Excellence in moulding innovative, skilled and socially committed Electrical Engineering professionals.</span></p>
+<p style="text-align: center;"><strong>MISSION</strong></p>
+<ul>
+<li>To provide the students with fundamental knowledge in the domain of Electrical Engineering, imparting ethical and environmental awareness, managerial skills and lifelong learning attitude.</li>
+<li>To equip the students for higher learning and to nurture the capacity to develop innovative solutions for technological challenges faced by the society and industry.</li>
+<li>To train the students in developing the skills of modeling, designing and problem solving in Electrical Engineering.</li>
+<li>To upgrade the resources for strengthening the teaching-learning process and to promote research.</li>
+</ul> 
+<h1><div id="header">Electrical Engineering</div></h1>
+<p style="text-align: justify;"> Electrical Engineering is the primary source of many present engineering streams like Computer Science, Electronics and Communication, Instrumentation, Information Technology etc.</p>
+<p style="text-align: justify;">The department is honored to have well qualified and experienced faculty and an equally enthusiastic technical team so that the department is dedicated to the promotion of excellence in Engineering education and to impart knowledge to the students in the field of Electrical Engineering. Most of the students of this department get placement in leading industries or organisations and get admission in reputed institutions in India and abroad for their higher studies. Many students of this department secure high rank for national level competitive examination for their higher studies. The department themselves provide efficient coaching for students, those who are preparing for entrance examinations like GATE.</p>
+             
+<p>&nbsp;</p>                       
+                       <h3>Program Offered : </h3>
+<p>B.Tech-Computer Science and Engineering - 4Years.</p>
+<p>&nbsp;</p>
+<h1><div id="header">Intake</div></h1>
+<table style="width:100%">
+    <tr>
+        <th>Discipline</th>
+        <th>WBJEE</th>
+        <th>JEE MAIN</th>
+        <th>JELET</th>
+        <th>TFW</th>
+        <th>Total Intake</th>
+    </tr>
+    <tr>
+        <td>CSE</td>
+        <td>54</td>
+        <td>06</td>
+        <td>12</td>
+        <td>03</td>
+        <td>60</td>
+    </tr>
+</table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<center><table>
+<tr>
+<td>
+<a href="Home.html"><center>Home</center></a>
+</td>
+<td>
+<a href="about.html"><center>About us</center>
+</a></td>
+<td>
+<a href="contact.html"><Center>Contact us</center></a>
+</td>
+</table>
+</center>
+</body>
+     </html>

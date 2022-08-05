@@ -1,0 +1,439 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>College Website</title>
+<style>
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #1bc2a2;
+}
+
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #1bc2a2;
+}
+
+/* This hides the dropdowns */
+
+
+li ul { display: none; }
+
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+ul li a:hover { background: #2c3e50; }
+
+/* Display the dropdown */
+
+
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li { float: none; }
+
+li:hover a { background: #1bc2a2; }
+
+li:hover li a:hover { background: #2c3e50; }
+
+.main-navigation li ul li { border-top: 0; }
+
+/* Displays second level dropdowns to the right of the first level dropdown */
+
+
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+/* Simple clearfix */
+
+
+
+ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+ul:after { clear: both; }
+body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    background-color: goldenrod;
+    color: #555555;
+    padding: 3px;
+}
+
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+h1 {
+    font-family: Palatino Linotype, ‘Book Antiqua’, Palatino, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #FF6103;
+    font-size: 38px;
+}
+h2 {
+    font-family: Georgi serif;
+    border-bottom: 3px solid #cc9900;
+    color: #CDC3700;
+    font-size: 25px;
+}
+table {
+    width:100%;
+}
+
+table, th , td {
+    border: 1px solid brown;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff0f5;
+}
+table tr:nth-child(even) {
+    background-color: #ffb6c1;
+} 
+
+form {
+              
+}
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+}
+.button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+}
+</style>
+</head>
+
+<body background="black">
+
+  <div id="main">
+ 
+      <table border="1"  width="100%"  >
+<tr><td rowspan="4" align="center" ><img src="logo.jpg" width="250" height="150"></td>
+ <td align="center" bgcolor="brown"> <font color="lavender" font size="20" style="font-family:Times New Roman;font-weight:bold">IMPS College of Engineering & Technology</font></td>
+</tr>
+<tr><td align="center" bgcolor="brown"> <font color="lavender" font size="4"style="font-family:Arial;font-weight:italic"  >Approved by All India Council of Technical Education, Government of India</font></td>
+</tr>
+<tr><td align="center" bgcolor="brown"> <font color="lavender" font size="4"style="font-family:Times New Roman;font-weight:italic" >Affiliated to Maulana Abul Kalam Azad University of Technology (Formerly know as W.B.U.T), Government of India</font></td>
+</tr>
+<tr><td align="center" bgcolor="brown"> <marquee><font color="lavender" style="font-family:Times New Roman;font-weight:italic"font size="4">IMPSCET welcomes you || Even Semester 2016 Practical Exams routine are out || Even semester 2016 Form Fillup have begun</marquee></font></td>
+</tr>
+      </table>
+<ul class="main-navigation">
+  <li><a href="home.html">Home</a></li>
+  <li><a>Department</a>
+    <ul>
+        <li><a ><img src ="it.jpg" width ="20" height ="20">Computer Science & Engineering</a>
+	  <ul>
+	  <li><a href="cse.html">Introduction</a></li>
+	  <li><a href="csefaculty.html">Faculty</a></li>
+	  <li><a href="cselab.html">Laboratories</a></li>
+           <li><a href="cseachivement.html"> Achievement</a></li>
+	  </ul>
+      <li><a ><img src ="ece.png" width ="20" height ="20">Electronics & Communication Engineering</a>
+        <ul>
+          <li><a href="ece.html">Introduction</a></li>
+	  <li><a href="ecefaculty.html">Faculty</a></li>
+	  <li><a href="eclab.html">Laboratories</a></li>
+           <li><a href="eceachivement.html">Achievement</a></li>
+        </ul>
+		<li><a ><img src ="bulb.jpg" width ="20" height ="20">Electrical Engineering</a>
+	  <ul>
+	  <li><a href="ee.html">Introduction</a></li>
+	  <li><a href="eefaculty.html">Faculty</a></li>
+	  <li><a href="eelab.html">Laboratories</a></li>
+          <li><a href="eeachivement.html">Achievement</a></li>
+	  </ul>
+	  <li><a ><img src ="ci.png" width ="20" height ="20">Civil Engineering</a>
+	  <ul>
+	  <li><a href="ce.html">Introduction</a></li>
+	  <li><a href="cefaculty.html">Faculty</a></li>
+	  <li><a href="celab.html">Laboratories</a></li>
+        
+	  </ul>
+              <li><a><img src ="hu.png" width ="20" height ="20">Humanities</a>
+	  <ul>
+	  <li><a href="hns.html">Introduction</a></li>
+	  <li><a href="humanitiesfaculty.html">Faculty</a></li>
+	  <li><a href="hnslab.html">Laboratories</a></li>
+   
+	  </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a>Admission</a>
+   <ul>
+       <li><a href="admspcrd.html">Admission Details</a></li>
+   <li><a href="fee.html">Course Fee</a></li>
+   <li><a href="scho.html">Scholarship</a></li></ul></li>
+  <li><a >Library</a>
+      <ul>
+      <li><a href="rule.html">Rules & Regulations</a></li>
+       <li><a href="libraryteam.html">Library Team</a></li>
+        <li><a href="libraryresourse.html">Library Resources</a></li>
+  </ul>
+  </li>
+  
+  <li><a href="#">Facilities</a>
+       <ul>
+      <li><a href="hostels.html">Hostel Facility</a></li>
+       <li><a href="rag.html">Anti-Ragging</a></li>
+        <li><a href="fac.html">Other Facilities</a></li>
+  </ul>
+  </li>
+  <li><a >Placement</a>
+      <ul>
+      <li><a href="placement.html">Placement Team</a></li>
+       <li><a href="recruit.html">Eminent Recruiters</a></li>
+  </ul>
+  </li>
+   <li><a>Attendance</a>
+   <ul>
+       <li><a href="atdncsrch.html">View Attendance</a></li></ul></li>
+  <li><a >Events</a>
+      <ul>
+      <li><a href="gallery.html">Gallery</a></li>
+       <li><a href="sports.html">Annual Sports</a></li>
+        <li><a href="edueve.html">Educational Events</a></li>
+  </ul>
+  </li>
+  <li><a href="#">Contact us</a>
+      <ul>
+      <li><a href="contactus.html"> College Address</a></li>
+       <li><a href="loc.html">College Location</a></li>
+  </ul>
+  </li>
+  <li><a href="#">About us</a>
+  <ul>
+       <li><a href="about.html">Our mission & Vision</a></li>
+      <li><a href="chairman.html">From the Chairman's Desk</a></li>
+       <li><a href="principal.html">From the Principal's Desk</a></li>
+        <li><a href="director.html">From the Director's Desk</a></li>
+        <li><a href="management.html">The Management Team</a></li>
+  </ul>
+  </li>
+   <li><a href="feedback.html">Feedback</a></li>
+  <li><a href="admin1.html">Admin</a></li>
+</ul>
+<!2nd table starts>
+
+    
+        
+        <h1>AntiRagging</h1>
+        
+                    <p>&nbsp;</p>
+                    <h2>Measures We Take</h2>
+                    <img src="rag.png" width="200" height="150" align="right">
+                    <p>The following measures we take to avoid ragging in our college campus:-<br>
+                       a)An Anti-Ragging Committee has been made in our college as per norms of AICTE to ensure zero-ragging. <br>
+                       b)For fresher's seprate class-rooms and hostel is provided so, that we can save them from the seniors contact.
+                       <br> 
+                     c)To create no ragging atmosphere in our college, an Anti-Ragging Board is there which clearly mention the punishment for the raggers. </p>
+                    <p>&nbsp;</p>
+                    <h2>Constitution Of Anti-Ragging Committee</h2>
+                    <p>According to the "West Bengal Prohibition of Ragging in Educational Institute Act 2000" the student who are involved in ragging should punish strictly and it has been made compulsory for colleges and other Educational Institutions to register F.I.R.s against them.
+                    <p>&nbsp;</p>
+                    
+                    <table id="customers">
+                        <tr>
+                            <th>Sl No.</th>
+                            <th>Name</th>
+                            <th>Designation</th>
+                            <th>Status In Anti-Ragging Committee</th>
+                            <th>Contact No.</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td> Dr.S.K.Bhattacharya</td>
+                            <td>Principal,IMPSCET</td>
+                            <td>Chairperson</td>
+                            <td>9830734478</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>2</td>
+                            <td>Officer in charge</td>
+                            <td>OIC,English Bazar PS</td>
+                            <td>Member(Police Administration)</td>
+                            <td>03512-252071</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Nandini Saraswati</td>
+                            <td>SDO,sadar</td>
+                            <td>Member(District Administration)</td>
+                            <td>03512-252733</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>4</td>
+                            <td>Mr.A.Dasgupta</td>
+                            <td>Journalist Amar Malda</td>
+                            <td>Member(Local media)</td>
+                            <td>9232603740</td>
+                        
+                            
+                        </tr>
+                        <tr class="alt">
+                            <td>5</td>
+                            <td>Mr.Anirban Dutta</td>
+                            <td>Assistant Proffeser & HOD,ECE,IMPSCET</td>
+                            <td>Member</td>
+                            <td>923206747</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>6</td>
+                            <td>Mr.Shankha Subhra Ghosh</td>
+                            <td>Assistant Proffeser & HOD,EE,IMPSCET</td>
+                            <td>Member</td>
+                            <td>9477158862</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>7</td>
+                            <td>Tanmoy Bosh</td>
+                            <td>Assistant Proffeser,CSE,IMPSCET</td>
+                            <td>Member</td>
+                            <td>9733404962</td>
+                        </tr>
+                        
+                         <tr class="alt">
+                            <td>8</td>
+                            <td>Mrs.Chirasree Dasgupta</td>
+                            <td>Assistant Proffeser & HOD,Humanities,IMPSCET</td>
+                            <td>Member</td>
+                            <td>9474682082</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>9</td>
+                            <td>Mr.A.K.Chakarborty</td>
+                            <td>Administrative Officer,IMPSCET</td>
+                            <td>Member</td>
+                            <td>9434206574</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>10</td>
+                            <td>Mr.D.Bagchi</td>
+                            <td>Non Teaching Stuff IMPSCET</td>
+                            <td>Member</td>
+                            <td>9434304193</td>
+                            
+                        </tr>
+                        <tr class="alt">
+                        <td>11</td>
+                        <td>Mrs.Moumita Chatterjee</td>
+                        <td>Girls Hostel Superintended</td>
+                        <td>Member</td>
+                        <td>9933676461</td>
+                    </tr>
+                    <tr class="alt">
+                    <td>12</td>
+                    <td>Mr.Kunal Chakarborty</td>
+                    <td>Boys HOstel Superintended</td>
+                    <td>Member</td>
+                    <td>9563528557</td>
+                    </tr>
+                    <tr class="alt">
+                        <td>13</td>
+                        <td>Mr.Sanjib Kumar Kundu</td>
+                        <td>Parent</td>
+                        <td>Member</td>
+                        <td></td>
+                       
+                    </tr>
+                    <tr class="alt">
+                        <td>14</td>
+                        <td>Mr.Meya Uddin Miya</td>
+                        <td>Parent</td>
+                        <td>Member</td>
+                        <td></td>
+                      
+                    </tr>
+                    <tr class="alt">
+                        <td>15</td>
+                        <td>Mr.Niraj Pandey</td>
+                        <td>4th Year CSE Student</td>
+                        <td>Member</td>
+                        <td></td>
+                    </tr>
+                    <tr class="alt">
+                        <td>16</td>
+                        <td>Mr.Somnath Hazari</td>
+                        <td>3rd Year EE</td>
+                        <td>Member</td>
+                        <td></td>
+                    </tr>
+                    <tr class="alt">
+                        <td>17</td>
+                        <td>Mr.Ashish Sarka</td>
+                        <td>1st Year EE</td>
+                        <td>Member</td>
+                        <td></td>
+                    </tr>
+                    <tr class="alt">
+                        <td>18</td>
+                       <td>Mr.Soumyadip Banarjee</td>
+                        <td>1st Year CSE</td>
+                        <td>Member</td>
+                        <td></td>
+                    </tr>
+                    
+                    </table>
+                    <h2>Punishment For Ragging</h2>
+                   
+                    <p>
+                    The following actions are taken against student for indulging & alerting ragging:-<br><br>
+               
+               
+                       1. Suspension from attending classes. <br>
+                       2. Suspension from hostel.<br>
+                       3. F.I.R. must be filed against raggers.<br>
+                       4. Fine could be taken from them.<br>
+                       5.Rustication from institution.<br>
+                      </p>
+                    <p>&nbsp;</p>
+
+                                  
+    
+    <table>
+      
+</table>
+
+
+
+
+ 
+  </div>
+
+</body>
+</html>

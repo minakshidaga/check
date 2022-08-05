@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>College Website</title>
+<style>
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #1bc2a2;
+}
+
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #1bc2a2;
+}
+
+/* This hides the dropdowns */
+
+
+li ul { display: none; }
+
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+ul li a:hover { background: #2c3e50; }
+
+/* Display the dropdown */
+
+
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li { float: none; }
+
+li:hover a { background: #1bc2a2; }
+
+li:hover li a:hover { background: #2c3e50; }
+
+.main-navigation li ul li { border-top: 0; }
+
+/* Displays second level dropdowns to the right of the first level dropdown */
+
+
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+/* Simple clearfix */
+
+
+
+ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+ul:after { clear: both; }
+body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    background-color: goldenrod;
+    color: #555555;
+    padding: 3px;
+}
+
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+h1 {
+    font-family: HELVETICA,SANS-SERIF;
+    border-bottom: 3px solid #cc9900;
+    color: #FF6103;
+    font-size: 38px;
+}
+h2 {
+    font-family: Georgi serif;
+    border-bottom: 3px solid #cc9900;
+    color: #CDC3700;
+    font-size: 25px;
+}
+table {
+    width:100%;
+}
+
+table, th , td {
+    border: 1px solid orange;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff0f5;
+}
+table tr:nth-child(even) {
+    background-color: #ff1493;
+} 
+
+form {
+              
+}
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+}
+.button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+}
+</style>
+</head>
+
+<body background="black">
+
+  <div id="main">
+ 
+      <table border="1"  width="100%"  >
+<tr><td rowspan="4" align="center" ><img src="logo.jpg" width="100" height="100"></td>
+ <td align="center" bgcolor="orange"> <font color="blue" font size="14" style="font-family:Brush Script Std;">IMPS College of Engineering & Technology</font></td>
+</tr>
+<tr><td align="center" bgcolor="orange"> <font color="blue" font size="2" >Approved by All India Council of Technical Education, Government of India</font></td>
+</tr>
+<tr><td align="center" bgcolor="orange"> <font color="blue" font size="2" >Affiliated to Maulana Abul Kalam Azad University of Technology (Formerly know as W.B.U.T), Government of India</font></td>
+</tr>
+<tr><td align="center" bgcolor="orange"> <marquee><font color="blue" font size="2" >Affiliated to Maulana Abul Kalam Azad University of Technology (Formerly know as W.B.U.T), Government of India</marquee></font></td>
+</tr>
+      </table>
+<ul class="main-navigation">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Dpartment</a>
+    <ul>
+      <li><a href="#">CSE</a>
+	  <ul>
+	  <li><a href="cse.html">Introduction</a></li>
+	  <li><a href="#">Faculty</a></li>
+	  <li><a href="#">Lab</a></li>
+	  </ul>
+      <li><a href="#">ECE</a>
+        <ul>
+          <li><a href="#">Introduction</a></li>
+	  <li><a href="#">Faculty</a></li>
+	  <li><a href="#">Lab</a></li>
+        </ul>
+		<li><a href="#">EEE</a>
+	  <ul>
+	  <li><a href="#">Introduction</a></li>
+	  <li><a href="#">Faculty</a></li>
+	  <li><a href="#">Lab</a></li>
+	  </ul>
+	  <li><a href="#">CE</a>
+	  <ul>
+	  <li><a href="#">Introduction</a></li>
+	  <li><a href="#">Faculty</a></li>
+	  <li><a href="#">Lab</a></li>
+	  </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#">Admission</a></li>
+  <li><a href="#">Library</a>
+      <ul>
+      <li><a href="#">Rules</a></li>
+       <li><a href="#">Team</a></li>
+        <li><a href="#">Resources</a></li>
+  </ul>
+  </li>
+  <li><a href="#">Alumni</a>
+      <ul>
+      <li><a href="#">Chairman Desk</a></li>
+       <li><a href="#">Principal Desk</a></li>
+        <li><a href="#">Director Desk</a></li>
+        <li><a href="#">Administration Board</a></li>
+  </ul>
+  </li>
+  <li><a href="#">Facilities</a>
+       <ul>
+      <li><a href="#">Hostel</a></li>
+       <li><a href="#">Anti-Ragging</a></li>
+        <li><a href="#">Other Facilities</a></li>
+  </ul>
+  </li>
+  <li><a href="#">Placement</a>
+      <ul>
+      <li><a href="#">aaaaa</a></li>
+       <li><a href="#">aaaaaaa</a></li>
+  </ul>
+  </li>
+   <li><a href="atdncsrch.html">Attendence</a></li>
+  <li><a href="#">Events</a>
+      <ul>
+      <li><a href="#">Gallery</a></li>
+       <li><a href="#">Sports</a></li>
+        <li><a href="#">Educational</a></li>
+  </ul>
+  </li>
+  <li><a href="#">Contact us</a>
+      <ul>
+      <li><a href="#">Address</a></li>
+       <li><a href="#">Location</a></li>
+  </ul>
+  </li>
+  <li><a href="#">About us</a></li>
+</ul>
+<!2nd table starts>
+<table>
+
+<tr>
+    <td >
+
+        <img src="1.gif" width="950" height="500">
+
+</td>
+
+
+<td>
+
+<form method="post" action="loginvalidate">
+        USERNAME:&nbsp;&nbsp;<input type="text" name="fname1">
+      <br>  PASSWORD:&nbsp;&nbsp;<input type="password" name="fname2">
+                                    <br>
+<table>
+<tr>
+<td><input type="submit" value="LOGIN"></td>
+<td><a href="reg.html">NEW USER</a></td>
+</tr>
+</table>
+                                    </form>
+    
+    <table>
+        <tr>
+            <td>
+                <a href="fp.html">forgot your password</a>
+            </td>
+</tr>
+
+    </table></table>
+
+
+
+
+<center><table>
+<tr>
+<td>
+<a href="home.html"><center>Home</center></a>
+</td>
+<td>
+<a href="about.html"><center>About us</center>
+</a></td>
+<td>
+<a href="contact.html"><Center>Contact us</center></a>
+</td>
+</table>
+</center>
+ 
+  </div>
+
+</body>
+</html> 
